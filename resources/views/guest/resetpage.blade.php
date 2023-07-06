@@ -7,7 +7,7 @@
          <div class="col-sm-4"></div>
          <div class="col-sm-4 text-center">
              <h4 class="my-3 text-secondary">Password Reset</h4>
-             <form action="{{ route('reset.password') }}" method="post">
+             <form action="{{ route('reset.password', [$user_id, $token]) }}" method="post">
                  @csrf
                  <input type="password" name="password"
                      class="form-control my-2 shadow-none @error('password') border-danger @enderror" id=""

@@ -19,7 +19,7 @@ class PasswordResetController extends Controller
     }
     public function index()
     {
-        return view('guest.forgetpass');
+        return view('guest.password-reset');
     }
 
     public function resetLink(Request $request)

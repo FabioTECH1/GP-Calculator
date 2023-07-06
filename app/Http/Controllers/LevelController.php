@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Level;
-use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 
 class LevelController extends Controller

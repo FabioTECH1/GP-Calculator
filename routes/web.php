@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 
 
 //login
-Route::get('/', [LoginController::class, 'index'])->name('login');
+Route::get('/', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'login'])->name('user.login');
 
 //logout
